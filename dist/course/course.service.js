@@ -1,0 +1,35 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CourseService = void 0;
+const common_1 = require("@nestjs/common");
+let CourseService = class CourseService {
+    getAllCourse() {
+        return 'Get all course -from service';
+    }
+    getCourseById(id) {
+        return 'Get course with ID: ${id} -from service';
+    }
+    createCourse() {
+        return 'create course -from service';
+    }
+    updateCourse(id) {
+        return 'Update coruse ${id} -from service';
+    }
+    patchCourse(id) {
+        return 'Patch Course ${id} -from service';
+    }
+    deleteCourse(id) {
+        return 'Delete Course ${id} -from service';
+    }
+};
+exports.CourseService = CourseService;
+exports.CourseService = CourseService = __decorate([
+    (0, common_1.Injectable)()
+], CourseService);
+//# sourceMappingURL=course.service.js.map

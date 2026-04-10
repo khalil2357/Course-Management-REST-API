@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common';
+import { CourseController } from './course.controller';
 
 @Injectable()
 export class CourseService {
     getAllCourse(): string {
         return 'Get all course -from service';
     }
-    getCourseByID(id:string): string{
+    getCourseById(id:string): string{
         return 'Get course with ID: ${id} -from service';
     }
     createCourse():string{
